@@ -54,7 +54,7 @@ final class ActionExecutor {
                 let configuration = AlarmManager.AlarmConfiguration.alarm(schedule: .fixed(date), attributes: attributes)
                 _ = try await AlarmManager.shared.schedule(id: item.id, configuration: configuration)
                 AlarmRecords.save(AlarmRecord(id: item.id, title: title, date: date))
-                return "已设置闹钟：\(title)，\(date.formatted(date: .complete, time: .shortened))。"
+                return "已设置闹钟：\(title)，\(ChineseDate.string(date))。"
             }
             throw BridgeFailure.permission("设置闹钟需要 iOS 26 或更新版本。")
         default: throw BridgeFailure.invalidPlan

@@ -1,5 +1,17 @@
 import Foundation
 
+enum ChineseDate {
+    static func string(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "zh_CN")
+        formatter.calendar = Calendar(identifier: .gregorian)
+        formatter.timeZone = .current
+        formatter.dateStyle = .full
+        formatter.timeStyle = .short
+        return formatter.string(from: date)
+    }
+}
+
 enum BridgeFailure: LocalizedError {
     case invalidPlan, expiredPlan, permission(String), configuration, network(String), busy
     var errorDescription: String? {
@@ -69,7 +81,7 @@ struct ActionPlan: Codable, Equatable {
         }
     }
     func summary() -> String {
-        let when = date.map { "\n时间：" + $0.formatted(date: .complete, time: .shortened) } ?? ""
+        let when = date.map { "\n时间：" + ChineseDate.string($0) } ?? ""
         switch action {
         case .openApp: return "打开\(appID?.name ?? "App")"
         case .createReminder: return "创建提醒：\(title ?? "")\(when)"

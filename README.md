@@ -22,6 +22,7 @@ cd server
 node --test
 
 # 在 Mac 的仓库根目录测试 Swift 核心
+cd ..
 swift test
 ```
 

@@ -13,7 +13,7 @@ struct AlarmsView: View {
             ForEach(records) { record in
                 VStack(alignment: .leading, spacing: 8) {
                     Text(record.title).font(.headline)
-                    Text(record.date.formatted(date: .complete, time: .shortened))
+                    Text(ChineseDate.string(record.date))
                     Button("取消闹钟", role: .destructive) { deletion = record }
                 }
             }

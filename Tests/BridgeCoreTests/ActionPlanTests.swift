@@ -13,6 +13,11 @@ final class ActionPlanTests: XCTestCase {
         XCTAssertTrue(plan.requiresConfirmation)
         try reminder(at: nil).validate(now: now, supportsAlarm: false)
     }
+    func testDateFeedbackIsChineseRegardlessOfSystemLanguage() {
+        let result = ChineseDate.string(now)
+        XCTAssertTrue(result.contains("年"))
+        XCTAssertTrue(result.contains("月"))
+    }
     func testBadDatesRejected() {
         for at in ["tomorrow", "2026-10-05T08:00:00", "2026-10-03T08:00:00Z", "2027-10-07T08:00:00Z", "2027-02-30T08:00:00Z", "2026-10-05T08:00:00+15:00"] {
             XCTAssertThrowsError(try reminder(at: at).validate(now: now, supportsAlarm: true), at)

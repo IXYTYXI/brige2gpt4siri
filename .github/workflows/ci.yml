@@ -1,0 +1,42 @@
+name: Build and test
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test
+        working-directory: server
+  ios:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - run: xcodebuild -version
+      - name: Verify generated project
+        run: |
+          python3 scripts/generate-project.py
+          git diff --exit-code -- ios/Bridge.xcodeproj
+      - name: Test action validation and confirmation
+        run: swift test
+      - name: Build iPhone simulator app
+        run: >-
+          xcodebuild -project ios/Bridge.xcodeproj -scheme Bridge
+          -destination 'generic/platform=iOS Simulator'
+          -derivedDataPath DerivedData CODE_SIGNING_ALLOWED=NO build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Bridge-simulator
+          path: DerivedData/Build/Products/Debug-iphonesimulator/Bridge.app
+          retention-days: 7

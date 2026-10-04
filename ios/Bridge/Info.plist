@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleDisplayName</key><string>Bridge</string>
+    <key>CFBundleName</key><string>$(PRODUCT_NAME)</string>
+    <key>CFBundleIdentifier</key><string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <key>CFBundleExecutable</key><string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>$(MARKETING_VERSION)</string>
+    <key>CFBundleVersion</key><string>$(CURRENT_PROJECT_VERSION)</string>
+    <key>LSRequiresIPhoneOS</key><true/>
+    <key>UILaunchScreen</key><dict/>
+    <key>UIApplicationSceneManifest</key><dict><key>UIApplicationSupportsMultipleScenes</key><false/></dict>
+    <key>UISupportedInterfaceOrientations</key><array><string>UIInterfaceOrientationPortrait</string></array>
+    <key>NSMicrophoneUsageDescription</key><string>用于听取你主动发起的中文语音请求。</string>
+    <key>NSSpeechRecognitionUsageDescription</key><string>将中文语音转成文字。设备不支持本地识别时可能由 Apple 处理。</string>
+    <key>NSRemindersFullAccessUsageDescription</key><string>在你确认后创建提醒事项。</string>
+    <key>NSAlarmKitUsageDescription</key><string>在你确认后设置到点响铃的一次性闹钟。</string>
+    <key>LSApplicationQueriesSchemes</key><array><string>maps</string><string>music</string><string>weixin</string></array>
+</dict></plist>

@@ -1,0 +1,48 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		73C8F88943938BFEED49D58C = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/BridgeApp.swift"; sourceTree = "<group>"; };
+		2A53536C678611927D9EDBA8 = { isa = PBXBuildFile; fileRef = 73C8F88943938BFEED49D58C; };
+		6CFE736CC8608022EB8C5C5B = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/BridgeModel.swift"; sourceTree = "<group>"; };
+		2A912DA1B1780C5650DA442C = { isa = PBXBuildFile; fileRef = 6CFE736CC8608022EB8C5C5B; };
+		64E9AAA4E3C91E9D3A871BF3 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Core/ActionPlan.swift"; sourceTree = "<group>"; };
+		F162C1600590EA9EF051EBE8 = { isa = PBXBuildFile; fileRef = 64E9AAA4E3C91E9D3A871BF3; };
+		1DE7ECB79EDAC3FE06EC58E2 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Intents/BridgeIntents.swift"; sourceTree = "<group>"; };
+		41DBB44C9B8FA42CAC1DB54A = { isa = PBXBuildFile; fileRef = 1DE7ECB79EDAC3FE06EC58E2; };
+		430F6865352117E7979A190C = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Services/ActionExecutor.swift"; sourceTree = "<group>"; };
+		7C7A201AFC680F84A693628E = { isa = PBXBuildFile; fileRef = 430F6865352117E7979A190C; };
+		1F1EDDEFD82703C7F24FECE8 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Services/AlarmRecords.swift"; sourceTree = "<group>"; };
+		20FE4A50F864C0BD9B92D6EB = { isa = PBXBuildFile; fileRef = 1F1EDDEFD82703C7F24FECE8; };
+		8E61B9314817AC683869800A = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Services/BridgeClient.swift"; sourceTree = "<group>"; };
+		7CB89CBAEDB259F30A81946D = { isa = PBXBuildFile; fileRef = 8E61B9314817AC683869800A; };
+		A7C19FC87E50EFFA1683BB19 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Services/SettingsStore.swift"; sourceTree = "<group>"; };
+		0200FE5207F5D0A1DA6F4F10 = { isa = PBXBuildFile; fileRef = A7C19FC87E50EFFA1683BB19; };
+		71BB9163698997589A19C820 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Services/SpeechController.swift"; sourceTree = "<group>"; };
+		978DA1B8036A12BDD7DA4A93 = { isa = PBXBuildFile; fileRef = 71BB9163698997589A19C820; };
+		D30440DE5358927CE15898BA = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Views/AlarmsView.swift"; sourceTree = "<group>"; };
+		4CF910BC1E9F0EE7D1D727C2 = { isa = PBXBuildFile; fileRef = D30440DE5358927CE15898BA; };
+		6BBFDCCB60781F6DB6E282B8 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Views/ContentView.swift"; sourceTree = "<group>"; };
+		FC7BB94A13B424AB5043A3A7 = { isa = PBXBuildFile; fileRef = 6BBFDCCB60781F6DB6E282B8; };
+		087EDECB0CAC180605D604A2 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bridge/Views/SettingsView.swift"; sourceTree = "<group>"; };
+		AEABDB6FA011C4F44B14C4B0 = { isa = PBXBuildFile; fileRef = 087EDECB0CAC180605D604A2; };
+		9CEEC13202AFBF12EE3ABB99 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Bridge/Info.plist; sourceTree = "<group>"; };
+		A172CEDCAE47474B615C54D5 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = Bridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A3E27B8CA818264D75C8D81 = { isa = PBXGroup; children = (A172CEDCAE47474B615C54D5,); name = Products; sourceTree = "<group>"; };
+		4813494D137E1631BBA301D5 = { isa = PBXGroup; children = (73C8F88943938BFEED49D58C,6CFE736CC8608022EB8C5C5B,64E9AAA4E3C91E9D3A871BF3,1DE7ECB79EDAC3FE06EC58E2,430F6865352117E7979A190C,1F1EDDEFD82703C7F24FECE8,8E61B9314817AC683869800A,A7C19FC87E50EFFA1683BB19,71BB9163698997589A19C820,D30440DE5358927CE15898BA,6BBFDCCB60781F6DB6E282B8,087EDECB0CAC180605D604A2,9CEEC13202AFBF12EE3ABB99,0A3E27B8CA818264D75C8D81,); sourceTree = "<group>"; };
+		878A52FC5FF6A57D50B7B870 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (2A53536C678611927D9EDBA8,2A912DA1B1780C5650DA442C,F162C1600590EA9EF051EBE8,41DBB44C9B8FA42CAC1DB54A,7C7A201AFC680F84A693628E,20FE4A50F864C0BD9B92D6EB,7CB89CBAEDB259F30A81946D,0200FE5207F5D0A1DA6F4F10,978DA1B8036A12BDD7DA4A93,4CF910BC1E9F0EE7D1D727C2,FC7BB94A13B424AB5043A3A7,AEABDB6FA011C4F44B14C4B0,); runOnlyForDeploymentPostprocessing = 0; };
+		E2AA269EB967A8853A258BFA = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		41D311A605520FC7B8B9A980 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		73EBF6644258C120893E685D = { isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = "YES";SWIFT_VERSION = "5.0";IPHONEOS_DEPLOYMENT_TARGET = "17.0";SDKROOT = "iphoneos";SWIFT_OPTIMIZATION_LEVEL = "-Onone";SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";ENABLE_TESTABILITY = "YES";DEBUG_INFORMATION_FORMAT = "dwarf";}; name = Debug; };
+		0B0C687DF8B6B8DC790B519C = { isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = "YES";SWIFT_VERSION = "5.0";IPHONEOS_DEPLOYMENT_TARGET = "17.0";SDKROOT = "iphoneos";SWIFT_OPTIMIZATION_LEVEL = "-O";SWIFT_COMPILATION_MODE = "wholemodule";DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";}; name = Release; };
+		76F8DEC3DFE0BDB465198890 = { isa = XCConfigurationList; buildConfigurations = (73EBF6644258C120893E685D,0B0C687DF8B6B8DC790B519C,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		6C7EFF6369083C8E1F2B1994 = { isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = "YES";SWIFT_VERSION = "5.0";IPHONEOS_DEPLOYMENT_TARGET = "17.0";SDKROOT = "iphoneos";SWIFT_OPTIMIZATION_LEVEL = "-Onone";SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";ENABLE_TESTABILITY = "YES";DEBUG_INFORMATION_FORMAT = "dwarf";PRODUCT_BUNDLE_IDENTIFIER = "com.ixytyxi.bridge";PRODUCT_NAME = "$(TARGET_NAME)";INFOPLIST_FILE = "Bridge/Info.plist";CODE_SIGN_STYLE = "Automatic";CURRENT_PROJECT_VERSION = "1";MARKETING_VERSION = "0.1.0";TARGETED_DEVICE_FAMILY = "1";SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";SUPPORTS_MACCATALYST = "NO";LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";}; name = Debug; };
+		DD75E2CB1C510A828AC72D96 = { isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = "YES";SWIFT_VERSION = "5.0";IPHONEOS_DEPLOYMENT_TARGET = "17.0";SDKROOT = "iphoneos";SWIFT_OPTIMIZATION_LEVEL = "-O";SWIFT_COMPILATION_MODE = "wholemodule";DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";PRODUCT_BUNDLE_IDENTIFIER = "com.ixytyxi.bridge";PRODUCT_NAME = "$(TARGET_NAME)";INFOPLIST_FILE = "Bridge/Info.plist";CODE_SIGN_STYLE = "Automatic";CURRENT_PROJECT_VERSION = "1";MARKETING_VERSION = "0.1.0";TARGETED_DEVICE_FAMILY = "1";SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";SUPPORTS_MACCATALYST = "NO";LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";}; name = Release; };
+		1B672BF3DA427763BF644BE3 = { isa = XCConfigurationList; buildConfigurations = (6C7EFF6369083C8E1F2B1994,DD75E2CB1C510A828AC72D96,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		34A04005BCAF206EEC990BD9 = { isa = PBXNativeTarget; buildConfigurationList = 1B672BF3DA427763BF644BE3; buildPhases = (878A52FC5FF6A57D50B7B870,E2AA269EB967A8853A258BFA,41D311A605520FC7B8B9A980,); buildRules = (); dependencies = (); name = Bridge; productName = Bridge; productReference = A172CEDCAE47474B615C54D5; productType = "com.apple.product-type.application"; };
+		244210E48437B6556980A702 = { isa = PBXProject; attributes = {LastUpgradeCheck = 2600; TargetAttributes = {34A04005BCAF206EEC990BD9 = {CreatedOnToolsVersion = 26.0;};};}; buildConfigurationList = 76F8DEC3DFE0BDB465198890; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, "zh-Hans"); mainGroup = 4813494D137E1631BBA301D5; productRefGroup = 0A3E27B8CA818264D75C8D81; projectDirPath = ""; projectRoot = ""; targets = (34A04005BCAF206EEC990BD9,); };
+	};
+	rootObject = 244210E48437B6556980A702;
+}
